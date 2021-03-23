@@ -23,7 +23,7 @@ def main():
             if value1 + value2 == check:
                 print('Correct!')
             else:
-                print(check + " is wrong answer ;(. Correct answer was " + value1+value2 + '\n',
+                print(check + " is wrong answer ;(. Correct answer was " + value1 + value2 + '\n',
                       "Let's try again, " + name + "!")
             break
         if symbol == '-':
