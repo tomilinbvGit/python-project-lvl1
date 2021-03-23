@@ -5,4 +5,6 @@
 
 ![example workflow](https://github.com/tomilinbvGit/python-project-lvl1/actions/workflows/lint.yml/badge.svg)
 
+[![asciicast](https://asciinema.org/a/Q5HopzCLEoqLuRATiCFp1ZVqP.svg)](https://asciinema.org/a/Q5HopzCLEoqLuRATiCFp1ZVqP)
+
 
