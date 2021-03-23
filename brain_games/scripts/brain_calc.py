@@ -22,24 +22,20 @@ def main():
         if symbol == '+':
             if value1 + value2 == check:
                 print('Correct!')
-            else:
-                print(check + " is wrong answer ;(. Correct answer was " + value1 + value2 + '\n',
-                      "Let's try again, " + name + "!")
-            break
-        if symbol == '-':
+            continue
+        elif symbol == '-':
             if value1 - value2 == check:
                 print('Correct!')
-            else:
-                print(check + " is wrong answer ;(. Correct answer was " + value1 - value2 + '\n',
-                      "Let's try again, " + name + "!")
-                break
-        if symbol == '*':
+            continue
+        elif symbol == '*':
             if value1 * value2 == check:
                 print('Correct!')
-            else:
-                print(check + " is wrong answer ;(. Correct answer was " + value1 * value2 + '\n',
-                      "Let's try again, " + name + "!")
-                break
+            continue
+        else:
+            print(check + " is wrong answer ;(. Correct answer was " + value1 + value2 + '\n',
+                    "Let's try again, " + name + "!")
+        break
+
 
     print('Congratulations, ' + name + '!')
 
