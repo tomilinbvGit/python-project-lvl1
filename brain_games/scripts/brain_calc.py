@@ -5,6 +5,7 @@ import prompt
 import random
 
 
+# flake8: noqa: C901
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -33,7 +34,7 @@ def main():
             continue
         else:
             print(check + " is wrong answer ;(. Correct answer was " + value1 + value2 + '\n',
-                    "Let's try again, " + name + "!")
+                  "Let's try again, " + name + "!")
         break
 
     print('Congratulations, ' + name + '!')
