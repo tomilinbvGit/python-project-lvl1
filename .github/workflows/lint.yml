@@ -29,7 +29,6 @@ jobs:
       uses: abatilo/actions-poetry@v2.0.0
       with:
         poetry-version: ${{ matrix.poetry-version }}
-      run: poetry --version
 
     - name: Lint with flake8
       run: |
