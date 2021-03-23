@@ -4,6 +4,7 @@
 import prompt
 import random
 
+
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -20,7 +21,8 @@ def main():
         elif (value % 2) == 1 and check == 'no':
             print('Correct!')
         else:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.\n", "Let's try again, " + name + '!')
+            print("'yes' is wrong answer ;(. Correct answer was 'no'.\n",
+                  "Let's try again, " + name + '!')
             break
 
     print('Congratulations, ' + name + '!')
