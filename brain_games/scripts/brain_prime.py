@@ -4,6 +4,7 @@
 import prompt
 import random
 
+
 # flake8: noqa: C901
 def main():
     print('Welcome to the Brain Games!')
@@ -33,7 +34,6 @@ def main():
 
         if i == 2:
             print('Congratulations, {}'.format(name))
-
 
 
 if __name__ == '__main__':

@@ -16,11 +16,11 @@ def main():
         start = random.randint(1, 101)
         num = random.randint(0, 9)
 
-        list = [i for i in range(start, start + ((step * 9) + 1), step)]
-        unknown = list[num]
-        list[num] = '..'
+        progression_list = [i for i in range(start, start + ((step * 9) + 1), step)]
+        unknown = progression_list[num]
+        progression_list[num] = '..'
 
-        print('Question: {}'.format(list))
+        print('Question: {}'.format(progression_list))
         check = prompt.integer('Your answer: ')
 
         if check == unknown:
