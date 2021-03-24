@@ -8,7 +8,7 @@ import random
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
+    print('Hello, {}!'.format(name))
     print('What number is missing in the progression?')
 
     for i in range(0, 3):
