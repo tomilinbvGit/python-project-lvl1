@@ -16,10 +16,10 @@ def main():
         start = random.randint(1, 101)
         num = random.randint(0, 9)
 
-        progression_list = [i for i in range(start, start + ((step * 9) + 1), step)]
-        unknown = progression_list[num]
-        progression_list[num] = '..'
-        list_to_str = ' '.join(map(str, progression_list))
+        prog_list = [i for i in range(start, start + ((step * 9) + 1), step)]
+        unknown = prog_list[num]
+        prog_list[num] = '..'
+        list_to_str = ' '.join(map(str, prog_list))
 
         print('Question: {}'.format(list_to_str))
         check = prompt.integer('Your answer: ')
@@ -27,7 +27,8 @@ def main():
         if check == unknown:
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.\n".format(check, unknown),
+            print("'{}' is wrong answer ;"
+                  "(. Correct answer was '{}'.\n".format(check, unknown),
                   "Let's try again, {}!".format(name))
             break
 

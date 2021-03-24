@@ -29,7 +29,8 @@ def main():
         if check == result:
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.\n".format(check, result),
+            print("'{}' is wrong answer ;"
+                  "(. Correct answer was '{}'.\n".format(check, result),
                   "Let's try again, {}!".format(name))
             break
         if i == 2:
