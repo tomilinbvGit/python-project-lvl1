@@ -1,5 +1,0 @@
-#!/home/boris_tomilin/PycharmProjects/python-project-lvl1/.venv/bin/python
-from brain_games.scripts.brain_progression import main
-
-if __name__ == '__main__':
-    main()
