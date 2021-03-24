@@ -9,7 +9,7 @@ import random
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
+    print('Hello, {}!'.format(name))
     print('What is the result of the expression?')
 
     for i in range(0, 3):
@@ -17,28 +17,31 @@ def main():
         value2 = random.randint(1, 100)
         symbol = random.choice(['+', '-', '*'])
 
-        print('Question: {}{}{}'.format(value1, symbol, value2))
+        print('Question: {0} {1} {2}'.format(value1, symbol, value2))
         check = prompt.integer('Your answer: ')
 
         if symbol == '+':
-            if value1 + value2 == check:
+            sum = value1 + value2
+            if sum == check:
                 print('Correct!')
             else:
-                print("{} is wrong answer ;(. Correct answer was {} + {}\n".format(check, value1, value2),
+                print("{0} is wrong answer ;(. Correct answer was {1}\n".format(check, sum),
                       "Let's try again, {}!".format(name))
                 break
         elif symbol == '-':
-            if value1 - value2 == check:
+            minus = value1 - value2
+            if minus == check:
                 print('Correct!')
             else:
-                print("{} is wrong answer ;(. Correct answer was {} - {} \n".format(check, value1, value2),
+                print("{0} is wrong answer ;(. Correct answer was {1}\n".format(check, minus),
                       "Let's try again, {}!".format(name))
                 break
         elif symbol == '*':
-            if value1 * value2 == check:
+            multiplication = value1 * value2
+            if multiplication == check:
                 print('Correct!')
             else:
-                print("{} is wrong answer ;(. Correct answer was {} * {}\n".format(check, value1, value1),
+                print("{0} is wrong answer ;(. Correct answer was {1}\n".format(check, multiplication),
                       "Let's try again, {}!".format(name))
                 break
 
