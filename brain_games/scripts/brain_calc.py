@@ -23,21 +23,27 @@ def main():
         if symbol == '+':
             if value1 + value2 == check:
                 print('Correct!')
-            continue
+            else:
+                print("{} is wrong answer ;(. Correct answer was {} + {}\n".format(check, value1, value2),
+                      "Let's try again, {}!".format(name))
+                break
         elif symbol == '-':
             if value1 - value2 == check:
                 print('Correct!')
-            continue
+            else:
+                print("{} is wrong answer ;(. Correct answer was {} - {} \n".format(check, value1, value2),
+                      "Let's try again, {}!".format(name))
+                break
         elif symbol == '*':
             if value1 * value2 == check:
                 print('Correct!')
-            continue
-        else:
-            print(check + " is wrong answer ;(. Correct answer was " + value1 + value2 + '\n',
-                  "Let's try again, " + name + "!")
-        break
+            else:
+                print("{} is wrong answer ;(. Correct answer was {} * {}\n".format(check, value1, value1),
+                      "Let's try again, {}!".format(name))
+                break
 
-    print('Congratulations, ' + name + '!')
+        if i == 2:
+            print('Congratulations, {}'.format(name))
 
 
 if __name__ == '__main__':

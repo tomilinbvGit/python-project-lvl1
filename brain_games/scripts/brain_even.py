@@ -3,6 +3,7 @@
 
 import prompt
 import random
+import sys
 
 
 def main():
@@ -20,12 +21,14 @@ def main():
             print('Correct!')
         elif (value % 2) == 1 and check == 'no':
             print('Correct!')
+
         else:
             print("'yes' is wrong answer ;(. Correct answer was 'no'.\n",
                   "Let's try again, " + name + '!')
-            break
+            sys.exit()
 
-    print('Congratulations, ' + name + '!')
+        if i == 2:
+            print('Congratulations, ' + name + '!')
 
 
 if __name__ == '__main__':

@@ -32,8 +32,8 @@ def main():
             print("'{}' is wrong answer ;(. Correct answer was '{}'.\n".format(check, result),
                   "Let's try again, {}!".format(name))
             break
-
-    print('Congratulations, {}'.format(name))
+        if i == 2:
+            print('Congratulations, {}'.format(name))
 
 
 if __name__ == '__main__':
