@@ -17,10 +17,11 @@ def main():
         num = random.randint(0, 9)
 
         progression_list = [i for i in range(start, start + ((step * 9) + 1), step)]
+        list_to_str = ''.join(progression_list)
         unknown = progression_list[num]
         progression_list[num] = '..'
 
-        print('Question: {}'.format(progression_list))
+        print('Question: {}'.format(list_to_str))
         check = prompt.integer('Your answer: ')
 
         if check == unknown:
