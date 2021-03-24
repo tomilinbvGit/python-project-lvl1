@@ -4,7 +4,7 @@
 import prompt
 import random
 
-
+# flake8: noqa: C901
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
