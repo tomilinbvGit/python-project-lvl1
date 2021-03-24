@@ -32,7 +32,7 @@ def main():
             break
 
         if i == 2:
-            print('Congratulations, {}'.format(name))
+            print('Congratulations, {}!'.format(name))
 
 
 if __name__ == '__main__':
