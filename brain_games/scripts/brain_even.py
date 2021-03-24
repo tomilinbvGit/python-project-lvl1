@@ -15,7 +15,7 @@ def main():
     for i in range(0, 3):
         value = random.randint(1, 100)
 
-        print('Question: ', value)
+        print('Question: {}'.format(value))
         check = prompt.string('Your answer: ')
         if (value % 2) == 0 and check == 'yes':
             print('Correct!')
