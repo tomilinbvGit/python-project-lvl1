@@ -16,17 +16,17 @@ def main():
         start = random.randint(1, 101)
         num = random.randint(0, 9)
 
-        se = [i for i in range(start, start + ((step * 9) + 1), step)]
-        q = se[num]
-        se[num] = '..'
+        list = [i for i in range(start, start + ((step * 9) + 1), step)]
+        unknown = list[num]
+        list[num] = '..'
 
-        print('Question: {}'.format(se))
+        print('Question: {}'.format(list))
         check = prompt.integer('Your answer: ')
 
-        if check == q:
+        if check == unknown:
             print('Correct!')
         else:
-            print("'{}' is wrong answer ;(. Correct answer was '{}'.\n".format(check, q),
+            print("'{}' is wrong answer ;(. Correct answer was '{}'.\n".format(check, unknown),
                   "Let's try again, {}!".format(name))
             break
 
