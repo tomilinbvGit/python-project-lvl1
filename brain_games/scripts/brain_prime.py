@@ -17,7 +17,7 @@ def main():
         print('Question: {}'.format(value))
         check = prompt.string('Your answer: ')
 
-        if value == 2 and check == 'yes':
+        if (value == 2 or value == 3) and check == 'yes':
             print('Correct!')
         elif value == 2 and check == 'no':
             print("'yes' is wrong answer ;(. Correct answer was 'no'.\n",
