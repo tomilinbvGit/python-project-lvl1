@@ -22,7 +22,7 @@ def main():
                 prime_list.append(num)
 
     for i in range(0, 3):
-        value = random.randint(1, 101)
+        value = random.randint(1, 100)
         print('Question: {}'.format(value))
         check = prompt.string('Your answer: ')
 
